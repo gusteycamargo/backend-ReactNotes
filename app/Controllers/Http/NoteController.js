@@ -108,7 +108,7 @@ class NoteController {
    * @param {Response} ctx.response
    */
   async destroy ({ params, request, response }) {
-    const post = await Note.find(params.id);
+    const note = await Note.find(params.id);
 
     await note.delete();
   }
