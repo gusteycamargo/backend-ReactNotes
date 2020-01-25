@@ -5,3 +5,5 @@
 const Route = use('Route')
 
 Route.resource('notes', 'NoteController').apiOnly();
+Route.post('/users', 'UserController.create');
+Route.post('/sessions', 'SessionController.create');
